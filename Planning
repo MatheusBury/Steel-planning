@@ -1,0 +1,20 @@
+
+#Planejamento de compra de AÇO
+
+
+# Essa função 
+def plan_compra (qtd_chapa, pedido, peso_chapa):
+    return ((pedido/qtd_chapa) * peso_chapa)
+
+
+def peso_da_chapa (esp, largura, comprimento):
+    return (((esp/1000) * (largura/1000) * (comprimento/1000)) * 7900)
+
+
+if __name__ == '__main__':
+
+    chapa = peso_da_chapa (2.65,1200,3000)
+    resultado = plan_compra (5,100,chapa)
+
+
+print(f'o planejamento é {resultado}')
